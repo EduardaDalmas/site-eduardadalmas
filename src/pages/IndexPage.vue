@@ -1,34 +1,72 @@
 <template>
   <q-page>
-    <div id="sobre" class="sobre row">
-      <div class="col-7">
-        <title-text>Sobre mim</title-text>
-        <text-description>
-          Olá, eu sou a Eduarda Dalmás, tenho 21 e sou Desenvolvedora Web há 3
-          anos. Um certo dia precisei bloquear o celular de meu pai quehavia
-          sido roubado para proteger suas informações, e me encantei pelo mundo
-          da tecnologia ao ver seu potencial benéfico, fiquei curiosa para
-          descobrir as infinitas possibilidades dessa área e após isso me
-          inscrevi no curso técnico de informática. No curso, ganhei uma bolsa
-          para estudar na GrowDev, um boorcamp de desenvolvimento Web, onde
-          exercitei os aprendizados e me apaixonei por programação, e entrei pra
-          área como desenvolvedora web com foco em front-end em uma empresa de
-          saúde. Ao concluir os cursos, entrei pra faculdade de Análise e
-          Desenvolvimento de Sistemas, e me aventurei em cursos de UX/UI Design
-          para aprimorar as telas que desenvolvo. Ministrei o curso de extensão
-          UX/UI Design na prática e vi que amo ensinar. Hoje, sei mais do que
-          nunca, o quanto a tecnologia pode melhorar a vida das pessoas. Ficarei
-          honrada em receber seu contato, fico á disposição através de minhas
-          redes sociais e e-mail ;)
-        </text-description>
-        <div class="social row">
-          <ButtonSocialMedia :medias="medias"></ButtonSocialMedia>
+    <div id="sobre" class="sobre">
+      <div class="gt-sm row">
+        <div class="col-7">
+          <title-text>Sobre mim</title-text>
+          <text-description>
+            Olá, eu sou a Eduarda Dalmás, tenho 21 e sou Desenvolvedora Web há 3
+            anos. Um certo dia precisei bloquear o celular de meu pai quehavia
+            sido roubado para proteger suas informações, e me encantei pelo
+            mundo da tecnologia ao ver seu potencial benéfico, fiquei curiosa
+            para descobrir as infinitas possibilidades dessa área e após isso me
+            inscrevi no curso técnico de informática na IENH. No curso, ganhei
+            uma bolsa para estudar na GrowDev, um boorcamp de desenvolvimento
+            Web, onde exercitei os aprendizados e me apaixonei por programação,
+            e entrei pra área como desenvolvedora web com foco em front-end em
+            uma empresa de saúde. Ao concluir os cursos, entrei pra faculdade de
+            Análise e Desenvolvimento de Sistemas, e me aventurei em cursos de
+            UX/UI Design para aprimorar as telas que desenvolvo. Ministrei o
+            curso de extensão UX/UI Design na prática e vi que amo ensinar.
+            Hoje, sei mais do que nunca, o quanto a tecnologia pode melhorar a
+            vida das pessoas. Ficarei honrada em receber seu contato, fico á
+            disposição através de minhas redes sociais e e-mail ;)
+          </text-description>
+          <div class="social row">
+            <ButtonSocialMedia :medias="medias"></ButtonSocialMedia>
+          </div>
+        </div>
+        <div class="col-5">
+          <img class="about" src="../assets/sobre.jpg" />
+          <div class="textName">Eduarda Brisch Dalmás</div>
+          <div class="textSubtitle">Analista de Programação na DoctorClin</div>
         </div>
       </div>
-      <div class="col-5">
-        <img class="about" src="../assets/sobre.jpg" />
-        <div class="textName">Eduarda Brisch Dalmás</div>
-        <div class="textSubtitle">Analista de Programação na DoctorClin</div>
+      <div class="lt-md">
+        <div class="row">
+          <title-text>Sobre mim</title-text>
+          <text-description>
+            Olá, eu sou a Eduarda Dalmás, tenho 21 e sou Desenvolvedora Web há 3
+            anos. Um certo dia precisei bloquear o celular de meu pai quehavia
+            sido roubado para proteger suas informações, e me encantei pelo
+            mundo da tecnologia ao ver seu potencial benéfico, fiquei curiosa
+            para descobrir as infinitas possibilidades dessa área e após isso me
+            inscrevi no curso técnico de informática na IENH. No curso, ganhei
+            uma bolsa para estudar na GrowDev, um boorcamp de desenvolvimento
+            Web, onde exercitei os aprendizados e me apaixonei por programação,
+            e entrei pra área como desenvolvedora web com foco em front-end em
+            uma empresa de saúde. Ao concluir os cursos, entrei pra faculdade de
+            Análise e Desenvolvimento de Sistemas, e me aventurei em cursos de
+            UX/UI Design para aprimorar as telas que desenvolvo. Ministrei o
+            curso de extensão UX/UI Design na prática e vi que amo ensinar.
+            Hoje, sei mais do que nunca, o quanto a tecnologia pode melhorar a
+            vida das pessoas. Ficarei honrada em receber seu contato, fico á
+            disposição através de minhas redes sociais e e-mail ;)
+          </text-description>
+        </div>
+        <br />
+        <div class="row centralizer">
+          <img class="about" src="../assets/sobre.jpg" />
+        </div>
+        <div class="row centralizer">
+          <div class="textName">Eduarda Brisch Dalmás</div>
+          <div class="textSubtitle">Analista de Programação na DoctorClin</div>
+        </div>
+        <div class="centralizer">
+          <div class="social row">
+            <ButtonSocialMedia :medias="medias"></ButtonSocialMedia>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -54,8 +92,10 @@
 
     <div id="formacoes" class="formacoes">
       <title-text>Formações</title-text>
-      <div class="row">
-        <card-default :options="formacoes"></card-default>
+      <div class="centralizer">
+        <div class="row">
+          <card-default :options="formacoes"></card-default>
+        </div>
       </div>
     </div>
 
