@@ -1,7 +1,7 @@
 <template>
   <q-toolbar class="menu">
     <q-toolbar-title>
-      <img class="logo" src="../assets/logo.png" />
+      <a href="#home"><img class="logo" src="../assets/logo.png" /></a>
     </q-toolbar-title>
     <div class="gt-sm">
       <div class="row">
