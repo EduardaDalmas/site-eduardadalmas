@@ -1,9 +1,9 @@
 <template>
   <q-responsive>
     <q-layout>
-      <q-header id="home">
+      <q-header>
         <menu-layout :options="menu"></menu-layout>
-        <header-page></header-page>
+        <header-page id="home"></header-page>
       </q-header>
       <q-page-container class="background">
         <router-view />
