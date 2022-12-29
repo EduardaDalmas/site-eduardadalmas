@@ -57,7 +57,7 @@
         <div class="row centralizer">
           <img class="about" src="../assets/sobre.jpg" />
         </div>
-        <div class="row centralizer">
+        <div class="col centralizer">
           <div class="textName">Eduarda Brisch Dalmás</div>
           <div class="textSubtitle">Analista de Programação na DoctorClin</div>
         </div>
@@ -91,7 +91,7 @@
 
     <div class="formacoes">
       <title-text>Formações</title-text>
-      <div class="row">
+      <div class="row q-ml-lg">
         <card-default :options="formacoes"></card-default>
       </div>
     </div>

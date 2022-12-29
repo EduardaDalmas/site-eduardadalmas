@@ -8,12 +8,17 @@
       Satya Nadella - diretor executivo da Microsoft
     </div>
   </div>
-  <img id="sobre" class="simbolo" src="../assets/simbolo-direita.png" />
+  <divider-page id="sobre"></divider-page>
 </template>
 
 <script>
 import { defineComponent } from "vue";
+import DividerPage from "./DividerPage.vue";
 export default defineComponent({
   name: "HeaderPage",
+
+  components: {
+    DividerPage,
+  },
 });
 </script>
