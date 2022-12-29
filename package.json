@@ -1,8 +1,8 @@
 {
   "name": "site-eduardadalmas",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "Quasar App",
+  "description": "Eduarda Dalmás",
+  "productName": "Eduarda Dalmás",
   "author": "DalmasEduarda <eduarda.dalmas@doctorclin.com.br>",
   "private": true,
   "scripts": {
