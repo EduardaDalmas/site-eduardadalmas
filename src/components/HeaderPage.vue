@@ -8,7 +8,7 @@
       Satya Nadella - diretor executivo da Microsoft
     </div>
   </div>
-  <img class="simbolo" src="../assets/simbolo-direita.png" />
+  <img id="sobre" class="simbolo" src="../assets/simbolo-direita.png" />
 </template>
 
 <script>

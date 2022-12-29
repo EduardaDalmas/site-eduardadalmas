@@ -1,9 +1,9 @@
 <template>
   <q-page>
     <div id="sobre" class="sobre">
+      <TitleText>Sobre mim</TitleText>
       <div class="gt-sm row">
         <div class="col-7">
-          <title-text>Sobre mim</title-text>
           <text-description>
             Olá, eu sou a Eduarda Dalmás, tenho 21 e sou Desenvolvedora Web há 3
             anos. Um certo dia precisei bloquear o celular de meu pai quehavia
@@ -34,7 +34,6 @@
       </div>
       <div class="lt-md">
         <div class="row">
-          <title-text>Sobre mim</title-text>
           <text-description>
             Olá, eu sou a Eduarda Dalmás, tenho 21 e sou Desenvolvedora Web há 3
             anos. Um certo dia precisei bloquear o celular de meu pai quehavia
@@ -70,9 +69,9 @@
       </div>
     </div>
 
-    <divider-page></divider-page>
+    <divider-page id="experiencias"></divider-page>
 
-    <div id="experiencias" class="experiencias">
+    <div class="experiencias">
       <title-text>Experiências Profissionais</title-text>
       <q-tree :nodes="simple" accordion node-key="label" class="q-ml-xl">
         <template v-slot:default-header="prop">
@@ -88,20 +87,18 @@
       <button-default>Acessar currículo</button-default>
     </div>
 
-    <divider-page></divider-page>
+    <divider-page id="formacoes"></divider-page>
 
-    <div id="formacoes" class="formacoes">
+    <div class="formacoes">
       <title-text>Formações</title-text>
-      <div class="centralizer">
-        <div class="row">
-          <card-default :options="formacoes"></card-default>
-        </div>
+      <div class="row">
+        <card-default :options="formacoes"></card-default>
       </div>
     </div>
 
-    <divider-page></divider-page>
+    <divider-page id="conhecimentos"></divider-page>
 
-    <div id="conhecimentos" class="conhecimentos">
+    <div class="conhecimentos">
       <title-text>Conhecimentos</title-text>
       <div class="row q-ml-xl">
         <IconTech :tech="techs"></IconTech>

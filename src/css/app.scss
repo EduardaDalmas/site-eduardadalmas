@@ -64,8 +64,6 @@ html {
 
 .centralizer {
   margin: 0 auto;
-  display: grid;
-  place-items: center;
 }
 
 .q-header {
@@ -97,6 +95,38 @@ html {
   font-family: "montserrat-regular";
   font-size: 1em;
   letter-spacing: 0.1em;
+}
+
+@media (max-width: 625px) {
+  .q-header {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 1)),
+      url("../assets/coding.png");
+    height: 600px;
+    max-width: 100%;
+    max-height: 60%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .box-slogan {
+    background-color: #00000060;
+    height: 200px;
+    max-width: 350px;
+    margin-left: 5%;
+    margin-top: 35%;
+    margin-bottom: 15%;
+  }
+
+  .slogan {
+    font-family: "montserrat-regular";
+    font-size: 1.1em;
+  }
+
+  .slogan-mini {
+    font-family: "montserrat-regular";
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+  }
 }
 
 .simbolo {
@@ -172,7 +202,7 @@ html {
   margin: 10px;
   height: 200px;
   width: 300px;
-  margin-left: 3%;
+  margin-left: 5%;
   margin-bottom: 3%;
   transition: all 0.5s;
   align-items: center;
@@ -228,7 +258,7 @@ html {
 
 .botao-download {
   color: #ad41df;
-  margin-left: 3%;
+  margin-left: 4em;
   margin-top: 5%;
   transition: all 0.5s;
 }
