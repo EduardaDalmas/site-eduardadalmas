@@ -31,16 +31,16 @@ export default defineComponent({
         link: "#sobre",
       },
       {
-        text: "Formações",
-        link: "#formacoes",
-      },
-      {
         text: "Experiências",
         link: "#experiencias",
       },
       {
-        text: "Contato",
-        link: "#contato",
+        text: "Formações",
+        link: "#formacoes",
+      },
+      {
+        text: "Conhecimentos",
+        link: "#conhecimentos",
       },
     ];
 

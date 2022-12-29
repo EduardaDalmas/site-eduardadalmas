@@ -1,5 +1,5 @@
 <template>
-  <div v-for="(option, index) in medias" :key="index">
+  <div v-for="(option, index) in medias" :key="index" class="row q-mt-lg">
     <q-btn
       flat
       class="medias"

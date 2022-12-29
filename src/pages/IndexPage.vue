@@ -17,7 +17,9 @@
           Desenvolvimento de Sistemas, e me aventurei em cursos de UX/UI Design
           para aprimorar as telas que desenvolvo. Ministrei o curso de extensão
           UX/UI Design na prática e vi que amo ensinar. Hoje, sei mais do que
-          nunca, o quanto a tecnologia pode melhorar a vida das pessoas.
+          nunca, o quanto a tecnologia pode melhorar a vida das pessoas. Ficarei
+          honrada em receber seu contato, fico á disposição através de minhas
+          redes sociais e e-mail ;)
         </text-description>
         <div class="social row">
           <ButtonSocialMedia :medias="medias"></ButtonSocialMedia>
@@ -60,11 +62,14 @@
 
     <div id="conhecimentos" class="conhecimentos">
       <title-text>Conhecimentos</title-text>
+      <div class="row q-ml-xl">
+        <IconTech :tech="techs"></IconTech>
+      </div>
     </div>
 
     <divider-page></divider-page>
 
-    <footer-page></footer-page>
+    <footer-page :medias="medias"></footer-page>
   </q-page>
 </template>
 
@@ -75,6 +80,7 @@ import CardDefault from "src/components/CardDefault.vue";
 import FooterPage from "src/components/FooterPage.vue";
 import DividerPage from "src/components/DividerPage.vue";
 import ButtonSocialMedia from "src/components/ButtonSocialMedia.vue";
+import IconTech from "src/components/IconTech.vue";
 import { defineComponent, ref } from "vue";
 
 export default defineComponent({
@@ -85,12 +91,14 @@ export default defineComponent({
     FooterPage,
     DividerPage,
     ButtonSocialMedia,
+    IconTech,
   },
   name: "IndexPage",
 
   setup() {
     let formacoes = [];
     let medias = [];
+    let techs = [];
 
     formacoes = [
       {
@@ -183,9 +191,65 @@ export default defineComponent({
       },
     ];
 
+    techs = [
+      {
+        name: "Angular",
+        icon: "lab la-angular",
+      },
+      {
+        name: "Vue.js",
+        icon: "lab la-vuejs",
+      },
+      {
+        name: "Bitbucket",
+        icon: "fa-brands fa-bitbucket",
+      },
+      {
+        name: "Node.js",
+        icon: "fa-brands fa-node-js",
+      },
+      {
+        name: "JavaScript",
+        icon: "fa-brands fa-js",
+      },
+      {
+        name: "GitHub",
+        icon: "fa-brands fa-github",
+      },
+      {
+        name: "Git",
+        icon: "fa-brands fa-git",
+      },
+      {
+        name: "HTML/CSS",
+        icon: "fa-brands fa-html5",
+      },
+      {
+        name: "Unity básico",
+        icon: "fa-brands fa-unity",
+      },
+      {
+        name: "Mocha/Chai",
+        icon: "fa-brands fa-vials",
+      },
+      {
+        name: "Google Firebase",
+        icon: "fa-brands fa-google",
+      },
+      {
+        name: "Java",
+        icon: "fa-brands fa-java",
+      },
+      {
+        name: "Figma",
+        icon: "fa-brands fa-figma",
+      },
+    ];
+
     return {
       formacoes,
       medias,
+      techs,
       expanded: ref([
         "Satisfied customers (with avatar)",
         "Good food (with icon)",

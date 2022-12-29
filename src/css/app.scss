@@ -225,14 +225,28 @@ html {
 .medias {
   color: #ad41df;
   transition: all 0.5s;
+  font-size: 1rem;
+}
+
+.medias:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .social {
   margin-left: 5%;
-  margin-top: 5%;
 }
 
-.medias:hover {
+.techs {
+  color: white;
+  transition: all 0.5s;
+  font-size: 3em;
+  cursor: none;
+  margin: 40px;
+}
+
+.techs:hover {
+  color: #ad41df;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }

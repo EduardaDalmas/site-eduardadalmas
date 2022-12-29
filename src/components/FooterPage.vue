@@ -1,6 +1,9 @@
 <template>
   <div class="footer">
-    <div class="row step q-mt-md">
+    <div class="row q-ml-md">
+      <ButtonSocialMedia class="social" :medias="medias"></ButtonSocialMedia>
+    </div>
+    <div class="row q-mt-md">
       <div class="footer-text">Eduarda Dalmás™ 2022</div>
     </div>
   </div>
@@ -8,8 +11,20 @@
 
 <script>
 import { defineComponent } from "vue";
+import ButtonSocialMedia from "src/components/ButtonSocialMedia.vue";
 
 export default defineComponent({
   name: "FooterPage",
+
+  props: {
+    medias: {
+      type: Array,
+      required: true,
+    },
+  },
+
+  components: {
+    ButtonSocialMedia,
+  },
 });
 </script>
