@@ -222,6 +222,22 @@ html {
   float: right;
 }
 
+.botao-download {
+  color: #ad41df;
+  margin-left: 5%;
+  margin-top: 5%;
+  transition: all 0.5s;
+}
+
+.botao-download:hover {
+  background-color: #ad41df;
+  margin-left: 5%;
+  margin-top: 5%;
+  transition: all 0.5s;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
 .medias {
   color: #ad41df;
   transition: all 0.5s;

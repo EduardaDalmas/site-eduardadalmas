@@ -47,6 +47,7 @@
           <div class="textInfo2">{{ prop.node.story }}</div>
         </template>
       </q-tree>
+      <button-default>Acessar currículo</button-default>
     </div>
 
     <divider-page></divider-page>
@@ -81,6 +82,7 @@ import FooterPage from "src/components/FooterPage.vue";
 import DividerPage from "src/components/DividerPage.vue";
 import ButtonSocialMedia from "src/components/ButtonSocialMedia.vue";
 import IconTech from "src/components/IconTech.vue";
+import ButtonDefault from "src/components/ButtonDefault.vue";
 import { defineComponent, ref } from "vue";
 
 export default defineComponent({
@@ -92,6 +94,7 @@ export default defineComponent({
     DividerPage,
     ButtonSocialMedia,
     IconTech,
+    ButtonDefault,
   },
   name: "IndexPage",
 
