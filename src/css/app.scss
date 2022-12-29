@@ -149,9 +149,9 @@ html {
 }
 
 .textInfo {
-  color: #ad41df;
+  color: white;
   font-family: "montserrat-regular";
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-align: left;
   margin-left: 5%;
 }
@@ -159,7 +159,7 @@ html {
 .textInfo2 {
   color: white;
   font-family: "montserrat-regular";
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: left;
   margin-left: 5%;
 }
@@ -220,6 +220,21 @@ html {
 
 .custom-logo {
   float: right;
+}
+
+.medias {
+  color: #ad41df;
+  transition: all 0.5s;
+}
+
+.social {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.medias:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .divider {

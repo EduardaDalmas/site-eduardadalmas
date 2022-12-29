@@ -19,6 +19,9 @@
           UX/UI Design na prática e vi que amo ensinar. Hoje, sei mais do que
           nunca, o quanto a tecnologia pode melhorar a vida das pessoas.
         </text-description>
+        <div class="social row">
+          <ButtonSocialMedia :medias="medias"></ButtonSocialMedia>
+        </div>
       </div>
       <div class="col-5">
         <img class="about" src="../assets/sobre.jpg" />
@@ -71,6 +74,7 @@ import TitleText from "src/components/TitleText.vue";
 import CardDefault from "src/components/CardDefault.vue";
 import FooterPage from "src/components/FooterPage.vue";
 import DividerPage from "src/components/DividerPage.vue";
+import ButtonSocialMedia from "src/components/ButtonSocialMedia.vue";
 import { defineComponent, ref } from "vue";
 
 export default defineComponent({
@@ -80,11 +84,13 @@ export default defineComponent({
     CardDefault,
     FooterPage,
     DividerPage,
+    ButtonSocialMedia,
   },
   name: "IndexPage",
 
   setup() {
     let formacoes = [];
+    let medias = [];
 
     formacoes = [
       {
@@ -154,8 +160,32 @@ export default defineComponent({
       },
     ];
 
+    medias = [
+      {
+        icon: "lab la-linkedin-in",
+        link: "https://www.linkedin.com/in/eduarda-dalm%C3%A1s-8216bb197/",
+      },
+      {
+        icon: "lab la-github",
+        link: " https://github.com/EduardaDalmas",
+      },
+      {
+        icon: "lab la-instagram",
+        link: "https://www.instagram.com/eduardadalmas/",
+      },
+      {
+        icon: "lab la-facebook-f",
+        link: "https://www.facebook.com/eduarda.dalmas",
+      },
+      {
+        icon: "mail_outline",
+        link: "du.dalmas@hotmail.com",
+      },
+    ];
+
     return {
       formacoes,
+      medias,
       expanded: ref([
         "Satisfied customers (with avatar)",
         "Good food (with icon)",
