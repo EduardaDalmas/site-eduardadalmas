@@ -284,6 +284,10 @@ export default defineComponent({
         name: "Figma",
         icon: "fa-brands fa-figma",
       },
+      {
+        name: "React",
+        icon: "fa-brands fa-react",
+      },
     ];
 
     return {
