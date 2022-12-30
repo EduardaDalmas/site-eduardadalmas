@@ -1,4 +1,4 @@
-<template>
+<template id="home">
   <div class="box-slogan">
     <div class="slogan">
       "O melhor trabalho acontece quando você sabe que não é apenas trabalho,
