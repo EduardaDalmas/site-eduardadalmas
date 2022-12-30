@@ -301,6 +301,16 @@ export default defineComponent({
 
       simple: [
         {
+          label: "Ministrante do curso UX/UI Design na prática",
+          children: [
+            {
+              label: "IENH - Instituição Evangélica de Novo Hamburgo",
+              body: "story",
+              story: "06/10/2022 a 27/10/2022",
+            },
+          ],
+        },
+        {
           label: "Analista de Programação",
           story: "DoctorClin",
           children: [
@@ -322,7 +332,7 @@ export default defineComponent({
           ],
         },
         {
-          label: "Auxiliar de Computação Jr,",
+          label: "Auxiliar de Computação Jr.",
           children: [
             {
               label: "DoctorClin",
