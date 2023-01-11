@@ -23,6 +23,10 @@ html {
   background: #000000;
 }
 
+::selection {
+  background-color: #ad41df;
+}
+
 .menu {
   position: fixed;
   backdrop-filter: blur(10px);
