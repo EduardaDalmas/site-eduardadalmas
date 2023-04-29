@@ -288,6 +288,10 @@ export default defineComponent({
         name: "React",
         icon: "fa-brands fa-react",
       },
+      {
+        name: "Python",
+        icon: "fa-brands fa-python",
+      },
     ];
 
     return {
