@@ -36,7 +36,7 @@
         <div class="row">
           <text-description>
             Olá, eu sou a Eduarda Dalmás, tenho 21 e sou Desenvolvedora Web há 3
-            anos. Um certo dia precisei bloquear o celular de meu pai quehavia
+            anos. Um certo dia precisei bloquear o celular de meu pai que havia
             sido roubado para proteger suas informações, e me encantei pelo
             mundo da tecnologia ao ver seu potencial benéfico, fiquei curiosa
             para descobrir as infinitas possibilidades dessa área e após isso me
