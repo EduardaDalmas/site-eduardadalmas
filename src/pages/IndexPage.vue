@@ -39,7 +39,14 @@
         <div class="col-5">
           <img class="about" src="../assets/sobre.jpeg" />
           <div class="textName">Eduarda Brisch Dalmás</div>
-          <div class="textSubtitle">Analista de Programação na DoctorClin</div>
+          <div class="textSubtitle">
+            Analista de Programação na
+            <span
+              class="clickable"
+              @click="acessarLink('https://www.doctorclin.com.br/')"
+              >Doctor Clin</span
+            >
+          </div>
         </div>
       </div>
       <div class="lt-md">
