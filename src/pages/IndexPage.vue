@@ -5,29 +5,39 @@
       <div class="gt-sm row">
         <div class="col-7">
           <text-description>
-            Olá, eu sou a Eduarda Dalmás, tenho 21 e sou Desenvolvedora Web há 3
-            anos. Um certo dia precisei bloquear o celular de meu pai quehavia
-            sido roubado para proteger suas informações, e me encantei pelo
-            mundo da tecnologia ao ver seu potencial benéfico, fiquei curiosa
-            para descobrir as infinitas possibilidades dessa área e após isso me
-            inscrevi no curso técnico de informática na IENH. No curso, ganhei
-            uma bolsa para estudar na GrowDev, um boorcamp de desenvolvimento
-            Web, onde exercitei os aprendizados e me apaixonei por programação,
-            e entrei pra área como desenvolvedora web com foco em front-end em
-            uma empresa de saúde. Ao concluir os cursos, entrei pra faculdade de
-            Análise e Desenvolvimento de Sistemas, e me aventurei em cursos de
-            UX/UI Design para aprimorar as telas que desenvolvo. Ministrei o
-            curso de extensão UX/UI Design na prática e vi que amo ensinar.
-            Hoje, sei mais do que nunca, o quanto a tecnologia pode melhorar a
-            vida das pessoas. Ficarei honrada em receber seu contato, fico á
-            disposição através de minhas redes sociais e e-mail ;)
+            Olá, eu sou a Eduarda Dalmás, tenho 22 e sou Desenvolvedora Web
+            desde 2020. Um certo dia precisei bloquear o celular de meu pai que
+            havia sido roubado para proteger suas informações, e me encantei
+            pelo mundo da tecnologia ao ver seu potencial benéfico, fiquei
+            curiosa para descobrir as infinitas possibilidades dessa área e após
+            isso me inscrevi no curso técnico de informática na
+            <span
+              class="clickable"
+              @click="acessarLink('https://institucional.ienh.com.br/')"
+              >IENH</span
+            >. No curso, ganhei uma bolsa para estudar na
+            <span
+              class="clickable"
+              @click="acessarLink('https://www.growdev.com.br/')"
+              >GrowDev</span
+            >, um bootcamp de desenvolvimento Web, onde exercitei os
+            aprendizados e me apaixonei por programação, e entrei pra área como
+            desenvolvedora web com foco em front-end em uma empresa de saúde. Ao
+            concluir os cursos, entrei pra faculdade de Análise e
+            Desenvolvimento de Sistemas, e me aventurei em cursos de UX/UI
+            Design para aprimorar as telas que desenvolvo. Ministrei o curso de
+            extensão UX/UI Design na prática e vi que amo ensinar. Hoje, sei
+            mais do que nunca, o quanto a tecnologia pode melhorar a vida das
+            pessoas. Ficarei honrada em receber seu contato, fico á disposição
+            através de minhas redes sociais e e-mail ;)
           </text-description>
+
           <div class="social row">
             <ButtonSocialMedia :medias="medias"></ButtonSocialMedia>
           </div>
         </div>
         <div class="col-5">
-          <img class="about" src="../assets/sobre.jpg" />
+          <img class="about" src="../assets/sobre.jpeg" />
           <div class="textName">Eduarda Brisch Dalmás</div>
           <div class="textSubtitle">Analista de Programação na DoctorClin</div>
         </div>
@@ -35,22 +45,31 @@
       <div class="lt-md">
         <div class="row">
           <text-description>
-            Olá, eu sou a Eduarda Dalmás, tenho 21 e sou Desenvolvedora Web há 3
-            anos. Um certo dia precisei bloquear o celular de meu pai que havia
-            sido roubado para proteger suas informações, e me encantei pelo
-            mundo da tecnologia ao ver seu potencial benéfico, fiquei curiosa
-            para descobrir as infinitas possibilidades dessa área e após isso me
-            inscrevi no curso técnico de informática na IENH. No curso, ganhei
-            uma bolsa para estudar na GrowDev, um boorcamp de desenvolvimento
-            Web, onde exercitei os aprendizados e me apaixonei por programação,
-            e entrei pra área como desenvolvedora web com foco em front-end em
-            uma empresa de saúde. Ao concluir os cursos, entrei pra faculdade de
-            Análise e Desenvolvimento de Sistemas, e me aventurei em cursos de
-            UX/UI Design para aprimorar as telas que desenvolvo. Ministrei o
-            curso de extensão UX/UI Design na prática e vi que amo ensinar.
-            Hoje, sei mais do que nunca, o quanto a tecnologia pode melhorar a
-            vida das pessoas. Ficarei honrada em receber seu contato, fico á
-            disposição através de minhas redes sociais e e-mail ;)
+            Olá, eu sou a Eduarda Dalmás, tenho 22 e sou Desenvolvedora Web
+            desde 2020. Um certo dia precisei bloquear o celular de meu pai que
+            havia sido roubado para proteger suas informações, e me encantei
+            pelo mundo da tecnologia ao ver seu potencial benéfico, fiquei
+            curiosa para descobrir as infinitas possibilidades dessa área e após
+            isso me inscrevi no curso técnico de informática na
+            <span
+              class="clickable"
+              @click="acessarLink('https://institucional.ienh.com.br/')"
+              >IENH</span
+            >. No curso, ganhei uma bolsa para estudar na
+            <span
+              class="clickable"
+              @click="acessarLink('https://www.growdev.com.br/')"
+              >GrowDev</span
+            >, um bootcamp de desenvolvimento Web, onde exercitei os
+            aprendizados e me apaixonei por programação, e entrei pra área como
+            desenvolvedora web com foco em front-end em uma empresa de saúde. Ao
+            concluir os cursos, entrei pra faculdade de Análise e
+            Desenvolvimento de Sistemas, e me aventurei em cursos de UX/UI
+            Design para aprimorar as telas que desenvolvo. Ministrei o curso de
+            extensão UX/UI Design na prática e vi que amo ensinar. Hoje, sei
+            mais do que nunca, o quanto a tecnologia pode melhorar a vida das
+            pessoas. Ficarei honrada em receber seu contato, fico á disposição
+            através de minhas redes sociais e e-mail ;)
           </text-description>
         </div>
         <br />
@@ -135,6 +154,12 @@ export default defineComponent({
   },
   name: "IndexPage",
 
+  methods: {
+    acessarLink(endereco) {
+      window.open(endereco);
+    },
+  },
+
   setup() {
     let formacoes = [];
     let medias = [];
@@ -159,7 +184,7 @@ export default defineComponent({
       {
         text: "Inglês",
         description:
-          "Curso de Inglês - Wizard Novo Hamburgo no período de 3 anos.",
+          "Curso de Inglês - Wizard Novo Hamburgo no período de 3 anos. | Intensivo de Inglês Intermediário na IENH",
       },
       {
         text: "Métodos ágeis",
@@ -206,12 +231,42 @@ export default defineComponent({
         description:
           "Curso de Soluções Tecnológicas Emergentes - FIAP no período de 40 horas",
       },
+      {
+        text: "Chatbot Blip Chat",
+        description:
+          "Chatbots com Blip Chat | Colocado seu Chatbot no ar com Blip | Conecte seu chatbot no Whatsapp | Plataforma Blip para iniciantes no período de 16 horas - Blip Academy",
+      },
+      {
+        text: "Fundamentos de Inteligência Artificial",
+        description:
+          "Curso Fundamentos de Inteligência Artificial no período de 2 horas - Blip Academy",
+      },
+      {
+        text: "Acessibilidade Digital",
+        description:
+          "Curso Básico de Acessibilidade Digital no período de 1.5 horas - Udemy",
+      },
+      {
+        text: "Transformation Labs",
+        description:
+          "Imersão em Empreendedorismo e Inovação no Transformation Labs Brazil no período de 9 horas - Instituto da Transformação Digital",
+      },
+      {
+        text: "Condução à Ética",
+        description:
+          "Introdução á condução ética no período de 1 hora - DC Group",
+      },
+      {
+        text: "LGPD",
+        description:
+          "Lei Geral de Proteção de Dados no período de 1 hora - DC Group",
+      },
     ];
 
     medias = [
       {
         icon: "lab la-linkedin-in",
-        link: "https://www.linkedin.com/in/eduarda-dalm%C3%A1s-8216bb197/",
+        link: "https://www.linkedin.com/in/eduarda-dalmas/",
       },
       {
         icon: "lab la-github",
@@ -291,6 +346,14 @@ export default defineComponent({
       {
         name: "Python",
         icon: "fa-brands fa-python",
+      },
+      {
+        name: "PHP",
+        icon: "fa-brands fa-php",
+      },
+      {
+        name: "Laravel",
+        icon: "fa-brands fa-laravel",
       },
     ];
 

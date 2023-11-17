@@ -63,6 +63,16 @@ html {
   cursor: pointer;
 }
 
+.clickable {
+  cursor: pointer;
+  color: #ad41df;
+}
+
+.clickable:hover {
+  cursor: pointer;
+  color: orange;
+}
+
 .icon-menu {
   color: #ad41df;
 }
@@ -179,7 +189,7 @@ html {
 }
 
 .textSubtitle {
-  color: #ad41df;
+  color: #ba89d1;
   font-family: "montserrat-regular";
   font-size: 0.9rem;
   margin: 0 auto;
@@ -200,6 +210,10 @@ html {
   font-size: 0.9rem;
   text-align: left;
   margin-left: 5%;
+}
+
+.destaque {
+  color: orange;
 }
 
 .card {
