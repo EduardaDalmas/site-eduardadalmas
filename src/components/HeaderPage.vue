@@ -1,8 +1,9 @@
-<template>
+<template id="home">
   <div class="box-slogan">
     <div class="slogan">
       "O melhor trabalho acontece quando você sabe que não é apenas trabalho,
-      mas algo que vai melhorar a vida das pessoas".
+      mas algo que vai
+      <span class="destaque">melhorar a vida das pessoas</span>".
     </div>
     <div class="slogan-mini">
       Satya Nadella - diretor executivo da Microsoft

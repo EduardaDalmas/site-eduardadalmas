@@ -3,7 +3,7 @@
     <q-layout>
       <q-header>
         <menu-layout :options="menu"></menu-layout>
-        <header-page id="home"></header-page>
+        <header-page></header-page>
       </q-header>
       <q-page-container class="background">
         <router-view />
