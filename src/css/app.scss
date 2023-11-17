@@ -53,7 +53,7 @@ html {
 }
 
 .option-nav:hover {
-  color: #ad41df;
+  color: orange;
   text-transform: uppercase;
   font-weight: 550;
   font-size: 0.9rem;
@@ -297,6 +297,7 @@ html {
 .medias:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+  color: orange;
 }
 
 .social {
@@ -312,7 +313,7 @@ html {
 }
 
 .techs:hover {
-  color: #ad41df;
+  color: orange;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
