@@ -4,7 +4,7 @@
       <ButtonSocialMedia :medias="medias"></ButtonSocialMedia>
     </div>
     <div class="row q-mt-md">
-      <div class="footer-text">Eduarda Dalmás™ 2022</div>
+      <div class="footer-text">Eduarda Dalmás™ 2024</div>
     </div>
   </div>
 </template>
