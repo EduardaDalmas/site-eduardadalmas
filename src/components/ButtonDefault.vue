@@ -13,7 +13,7 @@ export default defineComponent({
   methods: {
     openLink() {
       window.open(
-        "https://docs.google.com/document/d/1tmYU8nclVR0ogJs7tSHpZ-f8693XtTdDalaEqgC2jss/edit?usp=sharing"
+        "https://drive.google.com/file/d/1OSmdg9FXNKdjH9adDfYHnF4QJtCxBI_O/view?usp=sharing"
       );
     },
   },

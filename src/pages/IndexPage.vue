@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="col-5">
-          <img class="about" src="../assets/sobre.jpeg" />
+          <img class="about" src="../assets/eduarda.png" />
           <div class="textName">Eduarda Brisch Dalmás</div>
           <div class="textSubtitle">
             Analista de Programação na
@@ -81,7 +81,7 @@
         </div>
         <br />
         <div class="row centralizer">
-          <img class="about" src="../assets/sobre.jpg" />
+          <img class="about" src="../assets/eduarda.png" />
         </div>
         <div class="col centralizer">
           <div class="textName">Eduarda Brisch Dalmás</div>
@@ -286,6 +286,18 @@ export default defineComponent({
       {
         icon: "lab la-facebook-f",
         link: "https://www.facebook.com/eduarda.dalmas",
+      },
+      {
+        icon: "lab la-stack-overflow",
+        link: "https://stackoverflow.com/users/21252144/eduarda-dalmas",
+      },
+      {
+        icon: "lab la-twitter",
+        link: "https://x.com/dalmas_eduarda",
+      },
+      {
+        icon: "lab la-behance",
+        link: "https://www.behance.net/eduardadalmas",
       },
       {
         icon: "mail_outline",
