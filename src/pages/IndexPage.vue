@@ -5,16 +5,25 @@
       <div class="gt-sm row">
         <div class="col-7">
           <text-description>
-            Olá, eu sou a Eduarda Dalmás, tenho 21 e sou Desenvolvedora Web há 3
-            anos. Um certo dia precisei bloquear o celular de meu pai quehavia
-            sido roubado para proteger suas informações, e me encantei pelo
-            mundo da tecnologia ao ver seu potencial benéfico, fiquei curiosa
-            para descobrir as infinitas possibilidades dessa área e após isso me
-            inscrevi no curso técnico de informática na IENH. No curso, ganhei
-            uma bolsa para estudar na GrowDev, um boorcamp de desenvolvimento
-            Web, onde exercitei os aprendizados e me apaixonei por programação,
-            e entrei pra área como desenvolvedora web com foco em front-end em
-            uma empresa de saúde. Ao concluir os cursos, entrei pra faculdade de
+            Olá, eu sou a Eduarda Dalmás, tenho 23, sou formada em Análise e
+            Desenvolvimento de Sistemas pela IENH e programadora desde 2020. Um
+            certo dia precisei bloquear o celular de meu pai que havia sido
+            roubado para proteger suas informações, e me encantei pelo mundo da
+            tecnologia ao ver seu potencial benéfico, fiquei curiosa para
+            descobrir as infinitas possibilidades dessa área e após isso me
+            inscrevi no curso técnico de informática na
+            <span
+              class="clickable"
+              @click="acessarLink('https://institucional.ienh.com.br/')"
+              >IENH</span
+            >. No curso, ganhei uma bolsa para estudar na
+            <span
+              class="clickable"
+              @click="acessarLink('https://www.growdev.com.br/')"
+              >GrowDev</span
+            >, um bootcamp de desenvolvimento Web, onde exercitei os
+            aprendizados e me apaixonei por programação, e entrei pra área como
+            desenvolvedora web. Ao concluir os cursos, entrei pra faculdade de
             Análise e Desenvolvimento de Sistemas, e me aventurei em cursos de
             UX/UI Design para aprimorar as telas que desenvolvo. Ministrei o
             curso de extensão UX/UI Design na prática e vi que amo ensinar.
@@ -22,29 +31,46 @@
             vida das pessoas. Ficarei honrada em receber seu contato, fico á
             disposição através de minhas redes sociais e e-mail ;)
           </text-description>
+
           <div class="social row">
             <ButtonSocialMedia :medias="medias"></ButtonSocialMedia>
           </div>
         </div>
         <div class="col-5">
-          <img class="about" src="../assets/sobre.jpg" />
+          <img class="about" src="../assets/eduarda.jpeg" />
           <div class="textName">Eduarda Brisch Dalmás</div>
-          <div class="textSubtitle">Analista de Programação na DoctorClin</div>
+          <div class="textSubtitle">
+            Programadora na
+            <span
+              class="clickable"
+              @click="acessarLink('https://www.cigam.com.br/')"
+              >Cigam Software de Gestão</span
+            >
+          </div>
         </div>
       </div>
       <div class="lt-md">
         <div class="row">
           <text-description>
-            Olá, eu sou a Eduarda Dalmás, tenho 21 e sou Desenvolvedora Web há 3
-            anos. Um certo dia precisei bloquear o celular de meu pai quehavia
-            sido roubado para proteger suas informações, e me encantei pelo
-            mundo da tecnologia ao ver seu potencial benéfico, fiquei curiosa
-            para descobrir as infinitas possibilidades dessa área e após isso me
-            inscrevi no curso técnico de informática na IENH. No curso, ganhei
-            uma bolsa para estudar na GrowDev, um boorcamp de desenvolvimento
-            Web, onde exercitei os aprendizados e me apaixonei por programação,
-            e entrei pra área como desenvolvedora web com foco em front-end em
-            uma empresa de saúde. Ao concluir os cursos, entrei pra faculdade de
+            Olá, eu sou a Eduarda Dalmás, tenho 23, sou formada em Análise e
+            Desenvolvimento de Sistemas pela IENH e programadora desde 2020. Um
+            certo dia precisei bloquear o celular de meu pai que havia sido
+            roubado para proteger suas informações, e me encantei pelo mundo da
+            tecnologia ao ver seu potencial benéfico, fiquei curiosa para
+            descobrir as infinitas possibilidades dessa área e após isso me
+            inscrevi no curso técnico de informática na
+            <span
+              class="clickable"
+              @click="acessarLink('https://institucional.ienh.com.br/')"
+              >IENH</span
+            >. No curso, ganhei uma bolsa para estudar na
+            <span
+              class="clickable"
+              @click="acessarLink('https://www.growdev.com.br/')"
+              >GrowDev</span
+            >, um bootcamp de desenvolvimento Web, onde exercitei os
+            aprendizados e me apaixonei por programação, e entrei pra área como
+            desenvolvedora web. Ao concluir os cursos, entrei pra faculdade de
             Análise e Desenvolvimento de Sistemas, e me aventurei em cursos de
             UX/UI Design para aprimorar as telas que desenvolvo. Ministrei o
             curso de extensão UX/UI Design na prática e vi que amo ensinar.
@@ -55,11 +81,13 @@
         </div>
         <br />
         <div class="row centralizer">
-          <img class="about" src="../assets/sobre.jpg" />
+          <img class="about" src="../assets/eduarda.jpeg" />
         </div>
         <div class="col centralizer">
           <div class="textName">Eduarda Brisch Dalmás</div>
-          <div class="textSubtitle">Analista de Programação na DoctorClin</div>
+          <div class="textSubtitle">
+            Programadora na Cigam Software de Gestão
+          </div>
         </div>
         <div class="centralizer">
           <div class="social row">
@@ -135,6 +163,12 @@ export default defineComponent({
   },
   name: "IndexPage",
 
+  methods: {
+    acessarLink(endereco) {
+      window.open(endereco);
+    },
+  },
+
   setup() {
     let formacoes = [];
     let medias = [];
@@ -144,7 +178,7 @@ export default defineComponent({
       {
         text: "Análise de Sistemas",
         description:
-          "Cursando 5° semestre da Faculdade de Análise e Desenvolvimento de Sistemas na Instituição Evangélica de Novo Hamburgo - IENH",
+          "Formada na Faculdade de Análise e Desenvolvimento de Sistemas na Instituição Evangélica de Novo Hamburgo - IENH",
       },
       {
         text: "Full Stack Developer",
@@ -159,7 +193,7 @@ export default defineComponent({
       {
         text: "Inglês",
         description:
-          "Curso de Inglês - Wizard Novo Hamburgo no período de 3 anos.",
+          "Curso de Inglês - Wizard Novo Hamburgo no período de 3 anos. | Intensivo de Inglês Intermediário na IENH",
       },
       {
         text: "Métodos ágeis",
@@ -206,12 +240,72 @@ export default defineComponent({
         description:
           "Curso de Soluções Tecnológicas Emergentes - FIAP no período de 40 horas",
       },
+      {
+        text: "Chatbot Blip Chat",
+        description:
+          "Chatbots com Blip Chat | Colocado seu Chatbot no ar com Blip | Conecte seu chatbot no Whatsapp | Plataforma Blip para iniciantes no período de 16 horas - Blip Academy",
+      },
+      {
+        text: "Fundamentos de Inteligência Artificial",
+        description:
+          "Curso Fundamentos de Inteligência Artificial no período de 2 horas - Blip Academy",
+      },
+      {
+        text: "Acessibilidade Digital",
+        description:
+          "Curso Básico de Acessibilidade Digital no período de 1.5 horas - Udemy",
+      },
+      {
+        text: "Transformation Labs",
+        description:
+          "Imersão em Empreendedorismo e Inovação no Transformation Labs Brazil no período de 9 horas - Instituto da Transformação Digital",
+      },
+      {
+        text: "Condução à Ética",
+        description:
+          "Introdução á condução ética no período de 1 hora - DC Group",
+      },
+      {
+        text: "LGPD",
+        description:
+          "Lei Geral de Proteção de Dados no período de 1 hora - DC Group",
+      },
+      {
+        text: "Reactjs",
+        description:
+          "NLW Journey - Reactjs da Rocketseat, que aconteceu entre 08/07/2024 e 12/07/2024, com 4h de duração.",
+      },
+      {
+        text: "PHP",
+        description:
+          "Curso Online de PHP da Rocketseat, que aconteceu entre 07/10/2024 e 11/10/2024, com 5h de duração.",
+      },
+      {
+        text: "IA na prática",
+        description:
+          "Evento de IA da Rocketseat, que aconteceu entre 19/08/2024 e 22/08/2024, com 2h de duração.",
+      },
+      {
+        text: "GO + React",
+        description:
+          "Go + React da Rocketseat, que aconteceu entre 05/08/2024 e 10/08/2024, com 5h de duração.",
+      },
+      {
+        text: "English Backstage",
+        description:
+          "English Backstage By Paula Gabriela - Curso com carga horária de 150 horas",
+      },
+      {
+        text: "ERP",
+        description:
+          "Questões de engenharia, SPED Fiscal e Bloco K, Configurador de produto",
+      },
     ];
 
     medias = [
       {
         icon: "lab la-linkedin-in",
-        link: "https://www.linkedin.com/in/eduarda-dalm%C3%A1s-8216bb197/",
+        link: "https://www.linkedin.com/in/eduarda-dalmas/",
       },
       {
         icon: "lab la-github",
@@ -224,6 +318,18 @@ export default defineComponent({
       {
         icon: "lab la-facebook-f",
         link: "https://www.facebook.com/eduarda.dalmas",
+      },
+      {
+        icon: "lab la-stack-overflow",
+        link: "https://stackoverflow.com/users/21252144/eduarda-dalmas",
+      },
+      {
+        icon: "lab la-twitter",
+        link: "https://x.com/dalmas_eduarda",
+      },
+      {
+        icon: "lab la-behance",
+        link: "https://www.behance.net/eduardadalmas",
       },
       {
         icon: "mail_outline",
@@ -288,6 +394,18 @@ export default defineComponent({
         name: "React",
         icon: "fa-brands fa-react",
       },
+      {
+        name: "Python",
+        icon: "fa-brands fa-python",
+      },
+      {
+        name: "PHP",
+        icon: "fa-brands fa-php",
+      },
+      {
+        name: "Laravel",
+        icon: "fa-brands fa-laravel",
+      },
     ];
 
     return {
@@ -300,6 +418,16 @@ export default defineComponent({
       ]),
 
       simple: [
+        {
+          label: "Programadora",
+          children: [
+            {
+              label: "Cigam Software de Gestão",
+              body: "story",
+              story: "09/2024",
+            },
+          ],
+        },
         {
           label: "Ministrante do curso UX/UI Design na prática",
           children: [
@@ -317,7 +445,7 @@ export default defineComponent({
             {
               label: "DoctorClin",
               body: "story",
-              story: "08/2022 até o momento",
+              story: "08/2022 até 08/2024",
             },
           ],
         },

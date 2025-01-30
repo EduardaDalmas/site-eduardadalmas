@@ -1,10 +1,10 @@
 <template>
   <div class="footer">
     <div class="row q-ml-md">
-      <ButtonSocialMedia class="social" :medias="medias"></ButtonSocialMedia>
+      <ButtonSocialMedia :medias="medias"></ButtonSocialMedia>
     </div>
     <div class="row q-mt-md">
-      <div class="footer-text">Eduarda Dalmás™ 2022</div>
+      <div class="footer-text">Eduarda Dalmás™ 2025</div>
     </div>
   </div>
 </template>

@@ -23,6 +23,10 @@ html {
   background: #000000;
 }
 
+::selection {
+  background-color: #ad41df;
+}
+
 .menu {
   position: fixed;
   backdrop-filter: blur(10px);
@@ -49,7 +53,7 @@ html {
 }
 
 .option-nav:hover {
-  color: #ad41df;
+  color: orange;
   text-transform: uppercase;
   font-weight: 550;
   font-size: 0.9rem;
@@ -57,6 +61,16 @@ html {
   margin-right: 20px;
   font-family: montserrat-light;
   cursor: pointer;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #ad41df;
+}
+
+.clickable:hover {
+  cursor: pointer;
+  color: orange;
 }
 
 .icon-menu {
@@ -175,7 +189,7 @@ html {
 }
 
 .textSubtitle {
-  color: #ad41df;
+  color: #ba89d1;
   font-family: "montserrat-regular";
   font-size: 0.9rem;
   margin: 0 auto;
@@ -196,6 +210,10 @@ html {
   font-size: 0.9rem;
   text-align: left;
   margin-left: 5%;
+}
+
+.destaque {
+  color: orange;
 }
 
 .card {
@@ -279,6 +297,7 @@ html {
 .medias:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+  color: orange;
 }
 
 .social {
@@ -294,7 +313,7 @@ html {
 }
 
 .techs:hover {
-  color: #ad41df;
+  color: orange;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
